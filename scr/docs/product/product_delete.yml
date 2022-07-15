@@ -1,0 +1,22 @@
+product delete method
+---
+tags:
+  - Product
+parameters:
+  - name: id
+    in: path
+    required: true
+    schema:
+      type: integer
+      minimum: 1
+    description: The product ID
+
+
+responses:
+  200:
+    description:  product deleted successfully
+  400:
+    description: Invalid data provided
+
+  404:
+    description: product_id not found

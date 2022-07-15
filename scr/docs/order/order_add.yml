@@ -1,0 +1,37 @@
+order add
+---
+tags:
+  - Order
+parameters:
+  - name: body
+    description: The body should contain the ordery
+    in: body
+    required: true
+    schema:
+      type: object
+      required:
+        - "user_id"
+        - "product_id"
+        - "cartItem_id"
+      properties:
+        quentive:
+          type: "integer"
+        is_active:
+          type: "boolean"
+          example: false
+        user_id:
+          type: "integer"
+        product_id:
+          type: "integer"
+        cart_id:
+          type: "integer"
+security:
+  - Bearer: []
+
+responses:
+  201:
+    description: When a order add succsefully
+
+
+  400:
+    description: Fails to add and update order

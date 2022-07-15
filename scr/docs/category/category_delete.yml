@@ -1,0 +1,22 @@
+category delete method
+---
+tags:
+  - Category
+parameters:
+  - name: id
+    in: path
+    required: true
+    schema:
+      type: integer
+      minimum: 1
+    description: The category ID
+
+
+responses:
+  200:
+    description: delete category successfully
+  400:
+    description: Invalid data provided
+
+  404:
+    description: cateroy_id not found

@@ -1,0 +1,50 @@
+product post method
+---
+tags:
+  - Product
+parameters:
+  - name: body
+    description: The body should contain the product
+    in: body
+    required: true
+    schema:
+      type: object
+      required:
+        - "product_name"
+      properties:
+        product_name:
+          type: "string"
+          example: "product_name"
+        product_slug:
+          type: "string"
+          example: "product_slug"
+        is_delete:
+          type: "boolean"
+          example: false
+        price:
+          type: integer
+        old_price:
+          type: integer
+        item_stock:
+          type: integer
+        is_plan:
+          type: "boolean"
+          example: false
+        category_id:
+          type: integer
+
+
+
+
+
+
+
+
+
+responses:
+  201:
+    description: When a product successfully add in
+
+  400:
+    description: Fails to add product
+

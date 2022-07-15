@@ -1,0 +1,31 @@
+product name search
+---
+tags:
+  - Product
+parameters:
+  - name: product_name
+    in: query
+    required: true
+    schema:
+      type: "string"
+      example: "product_name"
+    description: The product name search
+  - name: page
+    in: query
+    schema:
+      type: integer
+    description: The product page search
+  - name: per-page
+    in: query
+    schema:
+      type: integer
+    description: The product per-page
+
+
+
+responses:
+  200:
+    description: When a Product get  successfully
+
+  400:
+    description: Fails to get Product

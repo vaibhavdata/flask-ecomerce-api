@@ -1,0 +1,28 @@
+category post method
+---
+tags:
+  - Category
+parameters:
+  - name: body
+    description: The body should contain the category
+    in: body
+    required: true
+    schema:
+      type: object
+      required:
+        - "name"
+      properties:
+        name:
+          type: "string"
+          example: "name"
+        is_delete:
+          type: "boolean"
+          example: "False"
+
+
+responses:
+  201:
+    description: When a category successfully add in
+
+  400:
+    description: Fails to add category

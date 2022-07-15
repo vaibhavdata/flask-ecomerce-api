@@ -1,0 +1,29 @@
+cart delete method
+---
+tags:
+  - Cart
+parameters:
+  - name: id
+    in: path
+    required: true
+    schema:
+      type: integer
+      minimum: 1
+    description: The  cart ID
+  - name: product_id
+    in: path
+    required: true
+    schema:
+      type: integer
+      minimum: 1
+    description: The  product_id
+security:
+  - Bearer: []
+responses:
+  200:
+    description: delete cart successfully
+  400:
+    description: Invalid data provided
+
+  404:
+    description: cart_id not found

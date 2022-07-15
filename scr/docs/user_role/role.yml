@@ -1,0 +1,25 @@
+Role create
+---
+tags:
+  - User Role
+parameters:
+  - name: body
+    description: The body should contain the Role data
+    in: body
+    required: true
+    schema:
+      type: object
+      required:
+        - "name"
+      properties:
+        name:
+          type: "string"
+          example: "name"
+
+
+responses:
+  201:
+    description: When a user role successfully add in
+
+  400:
+    description: Fails to add user_role

@@ -1,0 +1,70 @@
+User Registration
+---
+tags:
+  - Authentication
+
+
+
+
+
+
+parameters:
+  - name: body
+    description: The body should contain the user Registration data
+    in: body
+    required: true
+    schema:
+      type: object
+      required:
+        - "email"
+        - "password"
+        - "first_name"
+      properties:
+        email:
+          type: "string"
+          example: "owebest@mail.com"
+        username:
+          type: "string"
+          example: "username"
+        first_name:
+          type: "string"
+          example: "first_name"
+        last_name:
+          type: "string"
+          example: "last_name"
+        password:
+          type: "string"
+          format: password
+          example: "********"
+        confirm_password:
+          type: "string"
+          format: password
+          example: "********"
+        role_id:
+          type: "integer"
+        is_staff:
+          type: "boolean"
+          example: false
+        is_active:
+          type: "boolean"
+          example: true
+        is_admin:
+          type: "boolean"
+          example: false
+        is_verified:
+          type: "boolean"
+          example: false
+        mobile:
+          type: "string"
+          example: "+911124"
+
+
+
+
+responses:
+  201:
+    description: When a user successfully registrations in
+
+  400:
+    description: Fails to Register due to bad request data
+

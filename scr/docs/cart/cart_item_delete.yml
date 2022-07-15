@@ -1,0 +1,30 @@
+cart_item delete method
+---
+tags:
+  - Cart
+parameters:
+  - name: cartItem_id
+    in: path
+    required: true
+    schema:
+      type: integer
+      minimum: 1
+    description: The  cartitem ID
+  - name: product_id
+    in: path
+    required: true
+    schema:
+      type: integer
+      minimum: 1
+    description: The  product_id
+
+security:
+  - Bearer: []
+responses:
+  200:
+    description: delete cartitem successfully
+  400:
+    description: Invalid data provided
+
+  404:
+    description: cartItem_id not found

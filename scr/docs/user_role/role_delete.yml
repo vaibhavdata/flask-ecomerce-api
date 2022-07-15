@@ -1,0 +1,23 @@
+User Role delete
+---
+tags:
+  - User Role
+parameters:
+  - in: path
+    name: id
+    required: true
+    schema:
+      type: integer
+      minimum: 1
+    description: The role ID
+
+
+
+responses:
+  200:
+    description: delete user_role successfully
+  400:
+    description: Invalid data provided
+
+  404:
+    description: User_Role not found

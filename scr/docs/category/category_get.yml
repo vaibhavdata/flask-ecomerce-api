@@ -1,0 +1,14 @@
+categoory get method
+---
+tags:
+  - Category
+
+
+
+responses:
+  200:
+    description: When a category get  successfully
+
+
+  400:
+    description: Fails to get category

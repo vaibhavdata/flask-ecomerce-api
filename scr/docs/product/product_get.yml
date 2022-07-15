@@ -1,0 +1,13 @@
+product get method
+---
+tags:
+  - Product
+
+
+
+responses:
+  200:
+    description: When a Product get  successfully
+
+  400:
+    description: Fails to get Product

@@ -1,0 +1,14 @@
+cart post method
+---
+tags:
+  - Cart
+
+
+
+responses:
+  201:
+    description: When a Cart add sussesfully
+
+
+  400:
+    description: Fails to add cart

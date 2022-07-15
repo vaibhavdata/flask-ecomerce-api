@@ -1,0 +1,13 @@
+Role
+---
+tags:
+  - User Role
+
+
+
+responses:
+  200:
+    description: When a user role get  successfully
+
+  400:
+    description: Fails to get user_role

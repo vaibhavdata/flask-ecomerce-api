@@ -1,0 +1,35 @@
+User Role update
+---
+tags:
+  - User Role
+parameters:
+  - name: id
+    in: path
+    required: true
+    schema:
+      type: integer
+      minimum: 1
+    description: The role ID
+  - name: body
+
+    description: The body should contain the user role details
+    in: body
+    required: true
+    schema:
+      type: object
+
+      properties:
+        name:
+          type: "string"
+          example: "name"
+
+
+
+responses:
+  200:
+    description: Updates user_role successfully
+  400:
+    description: Invalid data provided
+
+  404:
+    description: User_Role not found
